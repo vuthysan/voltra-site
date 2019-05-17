@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Index from "./components/index";
+import "./App.css";
 
 import Footer from "./components/layouts/footer";
 import Contact from "./components/contact";

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/layouts/navbar-index";
+import Navbar from "../components/layouts/navbar";
 const motorBike = [
   {
     id: 1,
@@ -112,16 +112,13 @@ class Index extends Component {
             </div>
 
             <div className="section2-body">
-              <div className="ui grid">
+              <div className="ui grid computer large screen widescreen only">
                 <div className="three wide column">
                   <a
-                    className="ui black vertical button animated fade button-center-left"
+                    className="ui black vertical button button-center-left"
                     href="/order"
                   >
-                    <div className="visible content buyNow">Buy Now</div>
-                    <div className="hidden content">
-                      <i className="icofont-cart-alt" />
-                    </div>
+                    Buy Now
                   </a>
                 </div>
                 <div className="ten wide column">{Image()}</div>
@@ -134,6 +131,22 @@ class Index extends Component {
                   </a>
                 </div>
               </div>
+              <center>
+                <div className="ui grid tablet mobile only">
+                  <div className="sixteen wide column">{Image()}</div>
+                  <div className="eight wide column">
+                    <a className="ui black button btnBuySm" href="/order">
+                      Buy Now
+                    </a>
+                  </div>
+
+                  <div className="eight wide column">
+                    <a className="ui black button btnBuySm" href="/try">
+                      Try Now
+                    </a>
+                  </div>
+                </div>
+              </center>
             </div>
             <center>
               <div className="motorPadding">
@@ -148,7 +161,7 @@ class Index extends Component {
                           }}
                         >
                           <div className={data.className} />
-                          <p>{data.name}</p>
+                          <p className="motorColorName">{data.name}</p>
                         </Link>
                       </div>
                     ))}
@@ -214,7 +227,7 @@ class Index extends Component {
           <div className="ui one column grid">
             <div className=" column">
               <h1 className="ui center aligned header warranty">Warranty</h1>
-              <p className="ui center aligned container">
+              <p className="ui container">
                 E-Lux Electric Bicycles offers one of the best warranties in
                 business. Front to Back Full coverage for 1 year. Battery-Any
                 issuses first year will be repaired or replaced. Second and
@@ -233,7 +246,7 @@ class Index extends Component {
           <div className="ui container">
             <center>
               <h2 className="warranty">Medai/Partner</h2>
-              <div className="ui row five column grid">
+              <div className="ui row five column grid doubling">
                 {partner.map(data => (
                   <div className="column" key={data.id}>
                     <img

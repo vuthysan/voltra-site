@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="ui secondary stackable menu navbar-background">
         <div className="item">
           <Link to="/">
-            <img src="image/logo.png" alt="" className="logoImage" />
+            <img src="image/voltra_logo.png" alt="" className="logoImage" />
           </Link>
         </div>
         <div className="right menu a-navbar">

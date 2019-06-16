@@ -280,14 +280,32 @@ class Index extends Component {
         <div className="ui container warranty-container">
           <div className="ui one column grid">
             <div className=" column">
-              <h1 className="ui center aligned header warranty">Warranty</h1>
+              <h1 className="ui center aligned header warranty">ការធានា</h1>
               <p className="ui container">
-              VOLTRA ផ្ដល់ជូនការធានាដ៏ល្អនៅក្នុងប្រទេសកម្ពុជា។ ម៉ូឌែល OFF-ROAD គឺមានការធានារយះពេល ១
-ឆ្នាំពេញសំរាប់កង់អគ្គិសនីទាំងមួល ព្រមទាំងធានាទៅលើថ្មលីចូម - អ៊ីយ៉ុងនិងសមាសភាគរបស់វា។ សម្រាប់ម៉ូទ័រ
-គឺមានការធានារយះពេលពីរឆ្នាំ។ ការធានានេះមិនរូមបញ្ចូលការបែកបាក់ផ្នែកណាមួយ
-ដោយអ្នកប្រើប្រាស់នឹងការថែរទាំមិនត្រឹមត្រូវ។ ម្ចាស់កង់អគ្គិសនីរបស់ក្រុមហ៊ុន VOLTRA
-គឺអាចយកកង់អគ្គិសនីរបស់ពួកគេទៅកាន់ស្ថានីយ៍បំរើសេវាកម្មជុសជុលណាដែលបានចុះបញ្ជីជាមួយក្រុមហ៊ុននៅក្នុងតំ
-បន់របស់ពួកគេសម្រាប់ការជួសជុលនិងសេវាត្រួតពិនិត្យ។
+                VOLTRA ផ្ដល់ជូនការធានាដ៏ល្អនៅក្នុងប្រទេសកម្ពុជា។ ម៉ូឌែល OFF-ROAD
+                គឺមានការធានារយះពេល ១ ឆ្នាំពេញសំរាប់កង់អគ្គិសនីទាំងមួល
+                ព្រមទាំងធានាទៅលើថ្មលីចូម - អ៊ីយ៉ុងនិងសមាសភាគរបស់វា។
+                សម្រាប់ម៉ូទ័រ គឺមានការធានារយះពេលពីរឆ្នាំ។
+                ការធានានេះមិនរូមបញ្ចូលការបែកបាក់ផ្នែកណាមួយ
+                ដោយអ្នកប្រើប្រាស់នឹងការថែរទាំមិនត្រឹមត្រូវ។
+                ម្ចាស់កង់អគ្គិសនីរបស់ក្រុមហ៊ុន VOLTRA
+                គឺអាចយកកង់អគ្គិសនីរបស់ពួកគេទៅកាន់ស្ថានីយ៍បំរើសេវាកម្មជុសជុលណាដែលបានចុះបញ្ជីជាមួយក្រុមហ៊ុននៅក្នុងតំ
+                បន់របស់ពួកគេសម្រាប់ការជួសជុលនិងសេវាត្រួតពិនិត្យ។
+              </p>
+            </div>
+          </div>
+
+          <div className="ui one column grid">
+            <div className=" column">
+              <h1 className="ui center aligned header warranty">WARRANTY</h1>
+              <p className="ui container">
+                VOLTRA offers the best warranties in Cambodia. The OFF-ROAD
+                model has a one year warranty for the whole scooter, on the
+                lithium-ion battery and its components. The motor has a two
+                years warranty. This warranty excludes broken parts by users and
+                maintenance. VOLTRA owners can bring their scooter to any
+                registered service station in their region for standard repairs
+                and service.
               </p>
             </div>
           </div>

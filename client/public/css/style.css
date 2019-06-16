@@ -208,23 +208,23 @@ p {
 }
 
 .button-center-left {
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    padding: 15px 0px !important;
-    border-radius: 15px !important;
+    /* position: absolute;
+top: 50%;
+left: 0%;
+transform: translate(-50%, -50%);
+width: 80%;
+padding: 15px 0px !important;
+border-radius: 15px !important; */
 }
 
 .button-center-right {
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(50%, -50%);
-    width: 80%;
-    padding: 15px 0px !important;
-    border-radius: 15px !important;
+    /* position: absolute;
+top: 50%;
+right: 0%;
+transform: translate(50%, -50%);
+width: 80%;
+padding: 15px 0px !important;
+border-radius: 15px !important; */
 }
 
 .motorPadding {

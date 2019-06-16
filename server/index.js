@@ -39,9 +39,9 @@ app.post("/api/form", (req, res) => {
               /* -------------------------------------
                   GLOBAL RESETS
               ------------------------------------- */
-        
+
               /*All the styling goes here*/
-        
+
               img {
                 border: none;
                 -ms-interpolation-mode: bicubic;
@@ -377,12 +377,12 @@ app.post("/api/form", (req, res) => {
                           </table>
                         </td>
                       </tr>
-        
+
                       <!-- END MAIN CONTENT AREA -->
                     </table>
-        
+
                     <!-- END CENTERED WHITE CONTAINER -->
-        
+
                     <!-- START FOOTER -->
                     <div class="footer">
                       <table

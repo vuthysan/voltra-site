@@ -25,14 +25,14 @@ const motorBike = [
   },
   {
     id: 4,
-    name: "Glossy Orange",
+    name: "Mat Orange",
     image: "image/motor/orange.png",
     className: "motorbike motorbike-color-orange",
     hash: "#orange"
   },
   {
     id: 5,
-    name: "Glossy Green",
+    name: "Mat Green",
     image: "image/motor/green.png",
     className: "motorbike motorbike-color-green",
     hash: "#green"
@@ -74,6 +74,15 @@ const partner = [
 class Index extends Component {
   state = {};
 
+  fn_technical = (title, data) => {
+    return (
+      <div className="column column_margin">
+        <p className="featureTitle">{title}</p>
+        <p className="featureDesc">{data}</p>
+      </div>
+    );
+  };
+
   render() {
     let Image = () => {
       let motor = motorBike.find(
@@ -89,11 +98,33 @@ class Index extends Component {
     };
     return (
       <React.Fragment>
-        <Navbar />
-        {/* Section 1 */}
-        <div className="banner-section1">
-          <img src="image/PhotoDeborah.jpg" alt="" className="ui image" />
+        <div className="menu-index">
+          <div className="ui secondary stackable menu navbar-background-index">
+            <div className="item">
+              <Link to="/">
+                <img src="image/voltra_logo.png" alt="" className="logoImage" />
+              </Link>
+            </div>
+            <div className="right menu a-navbar">
+              <Link to="/our-story" className="item">
+                Our Story
+              </Link>
+              <Link to="/model" className="item">
+                Model
+              </Link>
+              <Link to="/faq" className="item">
+                FAQ
+              </Link>
+              <Link to="/contact-us" className="item">
+                Contact us
+              </Link>
+            </div>
+          </div>
+          <div className="image-banner">
+            <div className="banner-section1" />
+          </div>
         </div>
+        {/* Section 1 */}
 
         {/* Section 2 */}
         <div className="section2">
@@ -105,14 +136,14 @@ class Index extends Component {
                 alt=""
               />
             </div>
-            <div>
-              <h3 className="ui center aligned header margin-top-h1-section2">
+            <div className="text-section1">
+              <h3 className="ui center aligned margin-top-h1-section2">
                 Get Ready For New Experience <br /> Only For $799 for Pre-Order
               </h3>
             </div>
 
             <div className="section2-body">
-              <div className="ui grid computer large screen widescreen only">
+              <div className="ui grid ">
                 <div className="three wide column">
                   <a
                     className="ui black vertical button button-center-left"
@@ -178,43 +209,66 @@ class Index extends Component {
           <div className="ui container">
             <div className="ui stackable two column grid">
               <div className="column">
-                <div>{Image()}</div>
+                <div className="motor-class">{Image()}</div>
               </div>
 
               <div className="column">
                 <div className="ui row one column grid">
                   <div className="column">
-                    <h1>Stunning Features</h1>
+                    <h1>លក្ខណះរបស់បច្ចេកវិទ្យា</h1>
+                  </div>
+                  <div className="ui row two column grid">
+                    {this.fn_technical("ម៉ូទ័រ", "500W Brushless DC motor")}
+                    {this.fn_technical(
+                      "ជម្រើសរបស់ថ្មចល័ត",
+                      "48V12AH Li-Ion battery"
+                    )}
+                  </div>
+
+                  <div className="ui row two column grid">
+                    {this.fn_technical("រយៈពេលបញ្ចូលថ្ម", "4h")}
+                    {this.fn_technical(
+                      "ហ្វ្រាំងខាងមុខ / ខាងក្រោយ",
+                      "ថាស / ពង្រីក"
+                    )}
+                  </div>
+
+                  <div className="ui row two column grid">
+                    {this.fn_technical("ល្បឿន​អតិបរមា", "38km/h")}
+                    {this.fn_technical("គីឡូម៉ែត្រ", "50km")}
+                  </div>
+
+                  <div className="ui row two column grid">
+                    {this.fn_technical("មាត្រ", "1690×620×1050mm")}
+                    {this.fn_technical("សំបកកង់", 'Fr. & Rr. 18"×2. 5')}
                   </div>
                 </div>
-                <div className="ui row two column grid">
+
+                <div className="ui row one column grid">
                   <div className="column">
-                    <p className="featureTitle">Engine</p>
-                    <p className="featureDesc">87.8cc</p>
+                    <h1>TECHNICAL CHARACTERISTICS</h1>
                   </div>
-                  <div className="column">
-                    <p className="featureTitle">Curb wight</p>
-                    <p className="featureDesc">95 KG</p>
+                  <div className="ui row two column grid">
+                    {this.fn_technical("Motor", "500W Brushless DC motor")}
+                    {this.fn_technical(
+                      "Removable Battery Option",
+                      "48V12AH Li-Ion battery"
+                    )}
                   </div>
-                </div>
-                <div className="ui row two column grid">
-                  <div className="column">
-                    <p className="featureTitle">Engine</p>
-                    <p className="featureDesc">87.8cc</p>
+
+                  <div className="ui row two column grid">
+                    {this.fn_technical("Charging time", "4h")}
+                    {this.fn_technical("Brake front / rear", "Disc / Expand")}
                   </div>
-                  <div className="column">
-                    <p className="featureTitle">Curb wight</p>
-                    <p className="featureDesc">95 KG</p>
+
+                  <div className="ui row two column grid">
+                    {this.fn_technical("Max speed", "38km/h")}
+                    {this.fn_technical("Mileage*", "50km")}
                   </div>
-                </div>
-                <div className="ui row two column grid">
-                  <div className="column">
-                    <p className="featureTitle">Engine</p>
-                    <p className="featureDesc">87.8cc</p>
-                  </div>
-                  <div className="column">
-                    <p className="featureTitle">Curb wight</p>
-                    <p className="featureDesc">95 KG</p>
+
+                  <div className="ui row two column grid">
+                    {this.fn_technical("Dimension (L*W*H)", "1690×620×1050mm")}
+                    {this.fn_technical("Tires", 'Fr. & Rr. 18"×2. 5')}
                   </div>
                 </div>
               </div>
@@ -228,14 +282,12 @@ class Index extends Component {
             <div className=" column">
               <h1 className="ui center aligned header warranty">Warranty</h1>
               <p className="ui container">
-                E-Lux Electric Bicycles offers one of the best warranties in
-                business. Front to Back Full coverage for 1 year. Battery-Any
-                issuses first year will be repaired or replaced. Second and
-                third year repaired or prorated if battery nedds replacing. Our
-                batteries are made with top of the line Litium lon cells similar
-                to the cells in the Tesla. All cells are manufactured by
-                Panasonic, Samsumg , or LG. We use a top quality brand mane
-                motors made by 8-Fun/Bafang.
+              VOLTRA ផ្ដល់ជូនការធានាដ៏ល្អនៅក្នុងប្រទេសកម្ពុជា។ ម៉ូឌែល OFF-ROAD គឺមានការធានារយះពេល ១
+ឆ្នាំពេញសំរាប់កង់អគ្គិសនីទាំងមួល ព្រមទាំងធានាទៅលើថ្មលីចូម - អ៊ីយ៉ុងនិងសមាសភាគរបស់វា។ សម្រាប់ម៉ូទ័រ
+គឺមានការធានារយះពេលពីរឆ្នាំ។ ការធានានេះមិនរូមបញ្ចូលការបែកបាក់ផ្នែកណាមួយ
+ដោយអ្នកប្រើប្រាស់នឹងការថែរទាំមិនត្រឹមត្រូវ។ ម្ចាស់កង់អគ្គិសនីរបស់ក្រុមហ៊ុន VOLTRA
+គឺអាចយកកង់អគ្គិសនីរបស់ពួកគេទៅកាន់ស្ថានីយ៍បំរើសេវាកម្មជុសជុលណាដែលបានចុះបញ្ជីជាមួយក្រុមហ៊ុននៅក្នុងតំ
+បន់របស់ពួកគេសម្រាប់ការជួសជុលនិងសេវាត្រួតពិនិត្យ។
               </p>
             </div>
           </div>
@@ -245,7 +297,7 @@ class Index extends Component {
         <div className="section3">
           <div className="ui container">
             <center>
-              <h2 className="warranty">Medai/Partner</h2>
+              <h2 className="warranty">Medias/Partners</h2>
               <div className="ui row five column grid doubling">
                 {partner.map(data => (
                   <div className="column" key={data.id}>
@@ -258,6 +310,33 @@ class Index extends Component {
                 ))}
               </div>
             </center>
+          </div>
+        </div>
+
+        {/* Map */}
+        <div className="map">
+          <div className="ui stackable two column grid">
+            <div className="five wide column">
+              <div className="mapContent">
+                <h2>Our office</h2>
+                <i class="icofont-location-pin" />
+                <span>#35, Street 600bis, Toul Kork, Phnom Penh, Cambodia</span>
+                <br />
+                <i class="icofont-send-mail" />
+                <span>hellworld@gmail.com</span>
+                <br />
+                <i class="icofont-phone" />
+                <span>+85515769999</span>
+              </div>
+            </div>
+          </div>
+          <div className="eleven wide column">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.681670356641!2d104.89086411527302!3d11.574662791782911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095176305bf04b%3A0x5029dc78a50975a0!2sSmallWorld+Venture!5e0!3m2!1sen!2skh!4v1560566386561!5m2!1sen!2skh"
+              frameborder="0"
+              allowfullscreen={true}
+              className="voltra-map"
+            />
           </div>
         </div>
       </React.Fragment>

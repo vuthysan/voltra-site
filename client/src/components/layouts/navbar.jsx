@@ -4,9 +4,6 @@ const Navbar = () => {
   return (
     <React.Fragment>
       <div className="ui secondary stackable menu navbar-background">
-        {/* <div className="left menu h1-navbar">
-          <img src="image/logo.png" alt="" className="logoImage" />
-        </div> */}
         <div className="item">
           <Link to="/">
             <img src="image/logo.png" alt="" className="logoImage" />
@@ -14,16 +11,16 @@ const Navbar = () => {
         </div>
         <div className="right menu a-navbar">
           <Link to="/our-story" className="item">
-            Our-Story
+            Our Story
           </Link>
-          <Link to="/modal" className="item">
-            Modal
+          <Link to="/model" className="item">
+            Model
           </Link>
           <Link to="/faq" className="item">
             FAQ
           </Link>
           <Link to="/contact-us" className="item">
-            Contact
+            Contact us
           </Link>
         </div>
       </div>

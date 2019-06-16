@@ -1,39 +1,38 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/layouts/navbar";
 const motorBike = [
   {
     id: 1,
     name: "Glossy Black",
-    image: "image/motor/black.png",
+    image: "image/motor/black.webp",
     className: "motorbike motorbike-color-black",
     hash: "#black"
   },
   {
     id: 2,
     name: "Glossy White",
-    image: "image/motor/white.png",
+    image: "image/motor/white.webp",
     className: "motorbike1 motorbike-color-white",
     hash: "#white"
   },
   {
     id: 3,
     name: "Glossy Blue",
-    image: "image/motor/blue.png",
+    image: "image/motor/blue.webp",
     className: "motorbike motorbike-color-blue",
     hash: "#blue"
   },
   {
     id: 4,
-    name: "Mat Orange",
-    image: "image/motor/orange.png",
+    name: "Matte Orange",
+    image: "image/motor/orange.webp",
     className: "motorbike motorbike-color-orange",
     hash: "#orange"
   },
   {
     id: 5,
-    name: "Mat Green",
-    image: "image/motor/green.png",
+    name: "Matte Green",
+    image: "image/motor/green.webp",
     className: "motorbike motorbike-color-green",
     hash: "#green"
   }
@@ -90,7 +89,7 @@ class Index extends Component {
       );
       if (motor === null || motor === undefined || motor === []) {
         return (
-          <img src="image/motor/black.png" className="ui image fluid" alt="" />
+          <img src="image/motor/black.webp" className="ui image fluid" alt="" />
         );
       } else {
         return <img src={motor.image} className="ui image fluid" alt="" />;
@@ -138,7 +137,7 @@ class Index extends Component {
             </div>
             <div className="text-section1">
               <h3 className="ui center aligned margin-top-h1-section2">
-                Get Ready For New Experience <br /> Only For $799 for Pre-Order
+                Get Ready For New Experience <br /> Only $799 for Pre-Order
               </h3>
             </div>
 
@@ -289,7 +288,8 @@ class Index extends Component {
                 ការធានានេះមិនរូមបញ្ចូលការបែកបាក់ផ្នែកណាមួយ
                 ដោយអ្នកប្រើប្រាស់នឹងការថែរទាំមិនត្រឹមត្រូវ។
                 ម្ចាស់កង់អគ្គិសនីរបស់ក្រុមហ៊ុន VOLTRA
-                គឺអាចយកកង់អគ្គិសនីរបស់ពួកគេទៅកាន់ស្ថានីយ៍បំរើសេវាកម្មជុសជុលណាដែលបានចុះបញ្ជីជាមួយក្រុមហ៊ុននៅក្នុងតំ
+                គឺអាចយកកង់អគ្គិសនីរបស់ពួកគេទៅកាន់ស្ថានីយ៍បំរើសេវាកម្មជុសជុលណាដែលបានចុះបញ្ជី{" "}
+                <br /> ជាមួយក្រុមហ៊ុននៅក្នុងតំ
                 បន់របស់ពួកគេសម្រាប់ការជួសជុលនិងសេវាត្រួតពិនិត្យ។
               </p>
             </div>
@@ -334,27 +334,30 @@ class Index extends Component {
         {/* Map */}
         <div className="map">
           <div className="ui stackable two column grid">
-            <div className="five wide column">
+            <div className="six wide column remove_margin">
               <div className="mapContent">
                 <h2>Our office</h2>
                 <i class="icofont-location-pin" />
-                <span>#35, Street 600bis, Toul Kork, Phnom Penh, Cambodia</span>
+                <span>
+                  35 A/B, street 111, Khan 7makara, Phnom Penh, Cambodia
+                </span>
                 <br />
                 <i class="icofont-send-mail" />
-                <span>hellworld@gmail.com</span>
+                <span> info@voltramotors.com</span>
                 <br />
                 <i class="icofont-phone" />
-                <span>+85515769999</span>
+                <span>095 700 130</span>
               </div>
             </div>
-          </div>
-          <div className="eleven wide column">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.681670356641!2d104.89086411527302!3d11.574662791782911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095176305bf04b%3A0x5029dc78a50975a0!2sSmallWorld+Venture!5e0!3m2!1sen!2skh!4v1560566386561!5m2!1sen!2skh"
-              frameborder="0"
-              allowfullscreen={true}
-              className="voltra-map"
-            />
+            <div className="ten wide column">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3908.8937213313443!2d104.9159098!3d11.5594761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951f97d711f2b%3A0xa77a264f7bf61fd5!2sVOLTRA+MOTORS!5e0!3m2!1sen!2skh!4v1560692321281!5m2!1sen!2skh"
+                frameborder="0"
+                allowfullscreen={true}
+                className="voltra-map"
+                title="voltra location"
+              />
+            </div>
           </div>
         </div>
       </React.Fragment>

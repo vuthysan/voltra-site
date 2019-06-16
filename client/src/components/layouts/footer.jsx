@@ -11,13 +11,17 @@ const Footer = () => {
             alt="smallworld-venture"
           />
         </Link>
-        <p>Copyright © 2019 Voltra. All rights reserved</p>
+        <br />
+        <br />
         <Link to="#">
           <i className="icofont-facebook footer-icons" />
         </Link>
         <Link to="#">
           <i className="icofont-instagram footer-icons" />
         </Link>
+        <br />
+        <br />
+        <p>Copyright © 2019 VOLTRA. All rights reserved</p>
       </center>
     </div>
   );

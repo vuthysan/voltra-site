@@ -117,7 +117,7 @@ class Order extends Component {
     try {
       await this.setState({ errors: errors || {} });
       if (errors) return swal("Oh noes!", "The order request failed!", "error");
-      const form = await axios.post("/api/form", {
+      const form = await axios.post("http://localhost:5001/api/form", {
         firstName,
         lastName,
         email,
@@ -246,13 +246,13 @@ class Order extends Component {
                       value="orange"
                       checked={this.state.color === "orange"}
                       onChange={this.handleMethodColor}
-                      label="Glossy Orange"
+                      label="Matte Orange"
                     />
                     <InputRadio
                       value="green"
                       checked={this.state.color === "green"}
                       onChange={this.handleMethodColor}
-                      label="Glossy Green"
+                      label="Matte Green"
                     />
                   </div>
                 </div>

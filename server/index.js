@@ -3,7 +3,10 @@ const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 const path = require("path");
 const nodemailer = require("nodemailer");
+const cors = require("cors");
 const app = express();
+
+app.use(cors("*"));
 
 // parse application/x-www-form-urlencoded
 app.use(
@@ -414,15 +417,15 @@ app.post("/api/form", (req, res) => {
     tls: true,
     secure: true,
     auth: {
-      user: "koompi.com@gmail.com",
-      pass: "koompiselapad@@168"
+      user: "ebike.voltra@gmail.com",
+      pass: "Voltra@2019PP"
     }
   });
   // Step 2
   const mailOptions = {
     from: `${req.body.email}`, // sender address
     to: "san.vuthy08@gmail.com", // list of receivers
-    subject: "Congratulations to you Voltra", // Subject line
+    subject: "Congratulations", // Subject line
     html: output // plain text body
   };
   // Step 3

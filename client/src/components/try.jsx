@@ -186,7 +186,7 @@ class Try extends Component {
                 />
               </div>
 
-              <div className="field">
+              {/* <div className="field">
                 <label>Voltra Color</label>
                 <div class="ui form">
                   <div class="inline fields">
@@ -222,7 +222,7 @@ class Try extends Component {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="field">
                 <label>Message</label>
                 <textarea

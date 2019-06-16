@@ -191,7 +191,7 @@ class Model extends Component {
           </p>
           <h3>គុណសម្បត្តិ</h3>
           <p>ចំពោះកង់អាគុយនេះ មានគុណសម្បត្តិដូចជា៖</p>
-          <ul>
+          <ul className="list">
             <li>តម្លៃកង់អាគុយទាបជាងមម៉ូតូ 2 ដង</li>
             <li>តម្លៃថាមពលអគ្គិសនីទាបជាងប្រេងឥន្ទនៈ 6 ដង</li>
             <li>មិនមានការបំពុលបរិស្ថាន មិនបញ្ចេញកម្តៅ មិនមានសម្លេងកងរំពង</li>
@@ -208,7 +208,7 @@ class Model extends Component {
             <li>មានធានាជូនរយៈពេល 1 ឆ្នាំពីក្រុមហ៊ុន។</li>
           </ul>
           <h3>សុវត្ថិភាព</h3>
-          <ul>
+          <ul className="list">
             <li>
               ការធ្វើដំណើរដោយកង់អាគុយ គឺមានសុវត្ថភាពជាការធ្វើដំណើរដោយម៉ូតូ
               ពីព្រោះវាមានល្បឿនយឺតជាង (40km/h) ដែលម៉ូតូ 125CC មានល្បឿនដល់ទៅ
@@ -226,6 +226,8 @@ class Model extends Component {
             </li>
           </ul>
 
+          <br />
+          <br />
           <h3>HIGH QUALITY</h3>
           <p>
             Our new brand has a French design and standards included high
@@ -370,23 +372,30 @@ class Model extends Component {
           <table className="ui celled striped table">
             <thead>
               <tr>
-                <th />
-                <th>25.00៛ </th>
-                <th />
-                <th>0.00៛ </th>
+                <th> Distance per day (Km) </th>
+                <th>Price/day </th>
+                <th>Distance per month(Km)</th>
+                <th>Price/Month </th>
               </tr>
             </thead>
             <tbody>
               <tr>
+                <td>25</td>
+                <td>375.00រ</td>
+                <td>750</td>
+                <td>11,250.00រ</td>
+              </tr>
+              <tr>
+                <td>35</td>
+                <td>525.០០រ</td>
+                <td>1050</td>
+                <td>15,750.00រ</td>
+              </tr>
+              <tr>
                 <td>45</td>
-                <td>
-                  {" "}
-                  75.00៛ <sup>6</sup>{" "}
-                </td>
+                <td>675.០០រ</td>
                 <td>1350</td>
-                <td>
-                  0.00៛ <sup>20,25</sup>{" "}
-                </td>
+                <td>20.250.00រ</td>
               </tr>
             </tbody>
           </table>
@@ -401,7 +410,7 @@ class Model extends Component {
           </p>
           <h3>ADVANTAGES</h3>
           <p>About Electric bikes, their advantages are:</p>
-          <ul>
+          <ul className="list">
             <li>Cost of an electric bike: twice cheaper than motorbike</li>
             <li>Energy price: 6 times cheaper than gasoline</li>
             <li>No pollution, no smoke, no heat released, no noise…</li>
@@ -417,7 +426,7 @@ class Model extends Component {
             <li>1 year manufacturer's warranty</li>
           </ul>
           <h3>SAFETY</h3>
-          <ul>
+          <ul className="list">
             <li>
               “Drive electric bike is really safer because the speed is slower
               than motorbike (around 40km/h). A 125CC motorbike can go more than

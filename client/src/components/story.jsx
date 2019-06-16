@@ -9,10 +9,10 @@ class Story extends Component {
         <Navbar />
         <div className="ui text container">
           <center>
-            <h1 className="warranty">Story</h1>
+            <h1 className="warranty">Our Story</h1>
             <br />
           </center>
-          <h3>ប្រវត្តិរបស់ក្រុមហ៊ុន</h3>
+          <h2>ប្រវត្តិរបស់ក្រុមហ៊ុន</h2>
           <p>
             យើងមិនទទួលបានកេរ្តិ៍ពីឪពុកម្តាយរបស់យើងទេតែយើងបានវាពីកូនៗរបស់យើង"
             Antoine de Saint-Exupéry.
@@ -71,6 +71,9 @@ class Story extends Component {
           <p>មានមោទនភាពក្នុងនាមជា KHMER!</p>
           <p>មានមោទនភាពក្នុងនាមជា VOLTRA!</p>
           <p>រួមគ្នាយើងផ្លាស់ប្តូរពិភពលោក!</p>
+
+          <br />
+          <br />
 
           <h3>OUR STORY</h3>
           <p>

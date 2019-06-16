@@ -286,6 +286,13 @@ div .featureTitle {
     margin-top: 20px;
 }
 
+.list li {
+    font-size: 20px !important;
+}
+
+.icofont-facebook {
+    margin-left: 0px !important;
+}
 
 
 .warranty {
@@ -307,13 +314,14 @@ a .logoImage {
     height: 30px !important;
     width: auto !important;
     position: relative;
-    top: 10px;
+    /* top: 10px; */
 }
 
 .logoImage-navbar {
     height: 30px !important;
     width: auto !important;
     position: relative;
+    top: 2px;
 }
 
 

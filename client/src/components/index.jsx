@@ -242,7 +242,9 @@ class Index extends Component {
                     {this.fn_technical("សំបកកង់", 'Fr. & Rr. 18"×2. 5')}
                   </div>
                 </div>
-
+                <br />
+                <br />
+                <br />
                 <div className="ui row one column grid">
                   <div className="column">
                     <h1>TECHNICAL CHARACTERISTICS</h1>
@@ -333,7 +335,7 @@ class Index extends Component {
 
         {/* Map */}
         <div className="map">
-          <div className="ui stackable two column grid">
+          <div className="ui stackable two column grid stretched equal height">
             <div className="six wide column remove_margin">
               <div className="mapContent">
                 <h2>Our office</h2>

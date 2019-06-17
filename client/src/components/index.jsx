@@ -339,16 +339,35 @@ class Index extends Component {
             <div className="six wide column remove_margin">
               <div className="mapContent">
                 <h2>Our office</h2>
-                <i class="icofont-location-pin" />
-                <span>
-                  35 A/B, street 111, Khan 7makara, Phnom Penh, Cambodia
-                </span>
+                <div className="ui two column grid">
+                  <div className="two wide column">
+                    <i class="icofont-location-pin" />
+                  </div>
+                  <div className="fourteen wide column">
+                    <span>
+                      35 A/B, street 111, Khan 7makara, Phnom Penh, Cambodia
+                    </span>
+                  </div>
+                </div>
+                <div className="ui two column grid">
+                  <div className="two wide column">
+                    <i class="icofont-send-mail" />
+                  </div>
+                  <div className="fourteen wide column">
+                    <span> info@voltramotors.com</span>
+                  </div>
+                </div>
+                <div className="ui two column grid">
+                  <div className="two wide column">
+                    <i class="icofont-phone" />
+                  </div>
+                  <div className="fourteen wide column">
+                    <span>095 700 130</span>
+                  </div>
+                </div>
                 <br />
-                <i class="icofont-send-mail" />
-                <span> info@voltramotors.com</span>
+
                 <br />
-                <i class="icofont-phone" />
-                <span>095 700 130</span>
               </div>
             </div>
             <div className="ten wide column">

@@ -39,7 +39,8 @@ class Try extends Component {
       lastName: "",
       email: "",
       phoneNumber: "",
-      color: "black",
+      color: " ",
+      // payment: " ",
       message: "",
       errors: {},
       alert: {}
@@ -95,14 +96,7 @@ class Try extends Component {
   // Handle Submit
   async handleSubmit(e) {
     e.preventDefault();
-    const {
-      firstName,
-      lastName,
-      email,
-      phoneNumber,
-      color,
-      message
-    } = this.state;
+    const { firstName, lastName, email, phoneNumber, message } = this.state;
 
     const errors = this.validate();
 
@@ -114,7 +108,6 @@ class Try extends Component {
         lastName,
         email,
         phoneNumber,
-        color,
         message
       });
       if (form)

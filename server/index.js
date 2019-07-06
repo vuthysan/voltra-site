@@ -357,7 +357,7 @@ app.post("/api/form", (req, res) => {
                           >
                             <tr>
                               <td>
-                                <b><h2>Pre-Order</h2></b>
+                                <b><h2>The product information</h2></b>
                                 <p>
                                   Thank you for your interest in our product.
                                 </p>
@@ -424,7 +424,7 @@ app.post("/api/form", (req, res) => {
   // Step 2
   const mailOptions = {
     from: `${req.body.email}`, // sender address
-    to: "san.vuthy08@gmail.com", // list of receivers
+    to: "info@voltramotors.com", // list of receivers
     subject: "Congratulations", // Subject line
     html: output // plain text body
   };
@@ -435,6 +435,8 @@ app.post("/api/form", (req, res) => {
   });
 });
 
-app.listen(5001, () => {
-  console.log("App listening on port 5001!");
+const port = process.env.PORT || 5001;
+
+app.listen(port, () => {
+  console.log(`App listening on port ${port}!`);
 });

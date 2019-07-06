@@ -74,6 +74,7 @@ class Story extends Component {
 
           <br />
           <br />
+          <br />
 
           <h3>OUR STORY</h3>
           <p>

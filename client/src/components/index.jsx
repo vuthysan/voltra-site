@@ -142,7 +142,7 @@ class Index extends Component {
             </div>
 
             <div className="section2-body">
-              <div className="ui grid ">
+              <div className="ui mhidden grid ">
                 <div className="three wide column">
                   <a
                     className="ui black vertical button button-center-left"
@@ -344,9 +344,13 @@ class Index extends Component {
                     <i class="icofont-location-pin" />
                   </div>
                   <div className="fourteen wide column">
-                    <span>
+                    <p>
                       35 A/B, street 111, Khan 7makara, Phnom Penh, Cambodia
-                    </span>
+                    </p>
+                    <p>
+                      #C12, Central Market Southside, Svay Dangkum, Siem Reap,
+                      Cambodia
+                    </p>
                   </div>
                 </div>
                 <div className="ui two column grid">

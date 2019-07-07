@@ -8,6 +8,13 @@ const app = express();
 
 app.use(cors("*"));
 
+app.all("/*", function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With, Content-Type");
+  res.header("Access-Control-Allow-Methods", "GET, POST", "PUT");
+  next();
+});
+
 // parse application/x-www-form-urlencoded
 app.use(
   bodyParser.urlencoded({
@@ -16,7 +23,8 @@ app.use(
 );
 
 // parse application/json
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // View engine setup
 app.engine("handlebars", exphbs());

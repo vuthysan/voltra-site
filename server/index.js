@@ -424,7 +424,7 @@ app.post("/api/form", (req, res) => {
   // Step 2
   const mailOptions = {
     from: `${req.body.email}`, // sender address
-    to: "info@voltramotors.com", // list of receivers
+    to: "san.vuthy08@gmail.com", // list of receivers
     subject: "Congratulations", // Subject line
     html: output // plain text body
   };

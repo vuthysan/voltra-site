@@ -8,6 +8,13 @@ const app = express();
 
 app.use(cors("*"));
 
+app.all("/*", function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With, Content-Type");
+  res.header("Access-Control-Allow-Methods", "GET, POST", "PUT");
+  next();
+});
+
 // parse application/x-www-form-urlencoded
 app.use(
   bodyParser.urlencoded({
@@ -16,18 +23,19 @@ app.use(
 );
 
 // parse application/json
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // View engine setup
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
 // Static folder
-app.use("/public", express.static(path.join(__dirname, "public")));
+// app.use("/public", express.static(path.join(__dirname, "public")));
 
-app.get("/", (req, res) => {
-  res.render("contact");
-});
+// app.get("/", (req, res) => {
+//   res.render("contact");
+// });
 
 app.post("/api/form", (req, res) => {
   const request = req.body;
@@ -424,7 +432,7 @@ app.post("/api/form", (req, res) => {
   // Step 2
   const mailOptions = {
     from: `${req.body.email}`, // sender address
-    to: "san.vuthy08@gmail.com", // list of receivers
+    to: "info@voltramotors.com", // list of receivers
     subject: "Congratulations", // Subject line
     html: output // plain text body
   };

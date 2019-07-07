@@ -71,7 +71,17 @@ const partner = [
 ];
 
 class Index extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+    this.state = {
+      visible: false
+    };
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  toggleMenu() {
+    this.setState({ visible: !this.state.visible });
+  }
 
   fn_technical = (title, data) => {
     return (
@@ -104,7 +114,32 @@ class Index extends Component {
                 <img src="image/voltra_logo.png" alt="" className="logoImage" />
               </Link>
             </div>
-            <div className="right menu a-navbar">
+
+            {/* Mobile Navbar */}
+            <div className="item mobileMenu" onClick={this.toggleMenu}>
+              <div className="menu toggleMenu">
+                <i class="icofont-navigation-menu" />
+              </div>
+            </div>
+            {this.state.visible && (
+              <div className="right menu a-navbar voltra-menu">
+                <Link to="/our-story" className="item">
+                  Our Story
+                </Link>
+                <Link to="/model" className="item">
+                  Model
+                </Link>
+                <Link to="/faq" className="item">
+                  FAQ
+                </Link>
+                {/* <Link to="/contact-us" className="item">
+                  Contact us
+                </Link> */}
+              </div>
+            )}
+
+            {/* Normal Navbar */}
+            <div className="right menu a-navbar voltra-menu desktopMenu">
               <Link to="/our-story" className="item">
                 Our Story
               </Link>
@@ -114,11 +149,12 @@ class Index extends Component {
               <Link to="/faq" className="item">
                 FAQ
               </Link>
-              <Link to="/contact-us" className="item">
+              {/* <Link to="/contact-us" className="item">
                 Contact us
-              </Link>
+              </Link> */}
             </div>
           </div>
+
           <div className="image-banner">
             <div className="banner-section1" />
           </div>
